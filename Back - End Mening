@@ -1,0 +1,47 @@
+1. Tabel Pengguna (untuk menyimpan informasi profil pengguna):
+```sql
+CREATE TABLE users (
+    user_id INT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    nama_lengkap VARCHAR(255),
+    email VARCHAR(255),
+    foto_profil VARCHAR(255)
+);
+```
+
+2. Tabel Makanan (untuk menyimpan rencana makanan):
+```sql
+CREATE TABLE makanan (
+    makanan_id INT PRIMARY KEY AUTO_INCREMENT,
+    user_id INT,
+    judul_makanan VARCHAR(255),
+    tanggal DATE,
+    FOREIGN KEY (user_id) REFERENCES users(user_id)
+);
+```
+
+3. Tabel Detail Makanan (untuk menyimpan detail makanan dalam rencana makanan):
+```sql
+CREATE TABLE detail_makanan (
+    detail_id INT PRIMARY KEY AUTO_INCREMENT,
+    makanan_id INT,
+    nama_makanan VARCHAR(255),
+    jumlah INT,
+    FOREIGN KEY (makanan_id) REFERENCES makanan(makanan_id)
+);
+```
+
+4. Tabel Chat (untuk menyimpan percakapan/chat):
+```sql
+CREATE TABLE chat (
+    chat_id INT PRIMARY KEY AUTO_INCREMENT,
+    sender_id INT,
+    receiver_id INT,
+    pesan TEXT,
+    waktu TIMESTAMP,
+    FOREIGN KEY (sender_id) REFERENCES users(user_id),
+    FOREIGN KEY (receiver_id) REFERENCES users(user_id)
+);
+```
+
