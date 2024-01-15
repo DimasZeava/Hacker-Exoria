@@ -1,3 +1,4 @@
+import 'package:app/src/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,35 +11,25 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text("MENING"),
-          backgroundColor: Colors.yellow,
-          elevation: 15.4,
-          actions: [
-            IconButton(
-              icon: Icon(Icons.search),
-              onPressed: () {
-                // Perform search action
-              },
-            ),
-            IconButton(
-              icon: Icon(Icons.settings),
-              onPressed: () {
-                // Open settings screen
-              },
-            ),
-          ],
+      theme: AppTheme.lightTheme,
+      darkTheme: AppTheme.darkTheme,
+      themeMode: ThemeMode.system,
+      home: const AppHome(),
+    );
+  }
+}
+
+class AppHome extends StatelessWidget {
+  const AppHome({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Mening"),
+        backgroundColor: Colors.green,
         ),
-        body: const Column(
-          children: const [
-            Icon(Icons.home_filled),
-            Icon(Icons.pageview),
-            Icon(Icons.person_2_outlined),
-            Icon(Icons.settings),
-          ],
-        ),
-      ),
+      body: const Center(child: Text("Mening")),
     );
   }
 }
