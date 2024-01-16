@@ -6,6 +6,7 @@ import "package:app/src/constants/images_string.dart";
 import "package:app/src/constants/sizes.dart";
 import "package:app/src/constants/text_strings.dart";
 import "package:app/src/features/authentication/screen/login/login_screen.dart";
+import "package:app/src/features/authentication/screen/register/register_screen.dart";
 import "package:flutter/material.dart";
 import 'package:get/get.dart';
 
@@ -86,7 +87,7 @@ class WelcomeScreen extends StatelessWidget {
                 ),
                 Expanded(
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () => Get.to(() => const RegisterScreen()),
                     style: ElevatedButton.styleFrom(
                       elevation: 0,
                       shape: RoundedRectangleBorder(

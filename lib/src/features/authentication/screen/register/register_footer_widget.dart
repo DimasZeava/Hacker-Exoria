@@ -2,13 +2,13 @@ import 'package:app/src/constants/colors.dart';
 import 'package:app/src/constants/images_string.dart';
 import 'package:app/src/constants/sizes.dart';
 import 'package:app/src/constants/text_strings.dart';
-import 'package:app/src/features/authentication/screen/register/register_screen.dart';
+import 'package:app/src/features/authentication/screen/login/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 
-class LoginFooter extends StatelessWidget {
-  const LoginFooter({
+class RegisterFooter extends StatelessWidget {
+  const RegisterFooter({
     super.key,
   });
 
@@ -53,21 +53,21 @@ class LoginFooter extends StatelessWidget {
             ),
             icon: Image(image: AssetImage(GoogleLogo), width: 20.0),
             onPressed: () {}, 
-            label: Text("Masuk dengan Google"),
+            label: Text("Daftar dengan Google"),
             ),
         ),
         const SizedBox(
           height : Formheight - 20
           ),
         TextButton(
-          onPressed: () => Get.to(() => const RegisterScreen()), 
+          onPressed: () => Get.to(() => const LoginScreen()), 
           child: Text.rich(
             TextSpan(
-              text: DoesntHaveAccount,
+              text: AlreadyHaveAccount,
               style: Theme.of(context).textTheme.bodyText1,
               children: const[
               TextSpan(
-                text: " Register",
+                text: " Login",
                 style: TextStyle(color: Colors.blue),
                 ),
               ]
