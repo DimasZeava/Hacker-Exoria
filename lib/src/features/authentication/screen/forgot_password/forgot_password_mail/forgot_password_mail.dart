@@ -2,7 +2,9 @@ import "package:app/src/constants/colors.dart";
 import "package:app/src/constants/images_string.dart";
 import "package:app/src/constants/sizes.dart";
 import "package:app/src/constants/text_strings.dart";
+import "package:app/src/features/authentication/screen/forgot_password/forgot_password_otp/otp_screen.dart";
 import "package:flutter/material.dart";
+import "package:get/get.dart";
 
 class ForgotPasswordMailScreen extends StatelessWidget {
   const ForgotPasswordMailScreen({Key? key,}) : super(key: key);
@@ -69,7 +71,10 @@ class ForgotPasswordMailScreen extends StatelessWidget {
               const SizedBox(height: 20.0),
               SizedBox(
                 width: double.infinity,
-                child: ElevatedButton(onPressed: (){}, child: const Text("Next"),
+                child: ElevatedButton(
+                  onPressed: (){
+                    Get.to(() => const OTPScreen());
+                  }, child: const Text("Send"),
                 style: ElevatedButton.styleFrom(
                       elevation: 0,
                       shape: RoundedRectangleBorder(
