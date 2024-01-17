@@ -60,7 +60,7 @@ class ForgotPasswordMailScreen extends StatelessWidget {
                     borderRadius: BorderRadius.circular(10),
                     borderSide: BorderSide(color: PrimaryColor),
                   ),
-                  prefixIcon: Icon(Icons.person_outline_outlined),
+                  prefixIcon: Icon(Icons.mail),
                   hintText: "Email",
                   hintStyle: Theme.of(context).textTheme.bodyText1!.copyWith(
                         fontWeight: FontWeight.w100,

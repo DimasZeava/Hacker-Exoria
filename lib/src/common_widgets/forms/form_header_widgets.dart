@@ -13,7 +13,9 @@ class FormHeaderWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start, 
+      children: [
       Text(
         title,
         style: Theme.of(context).textTheme.headline1!.copyWith(

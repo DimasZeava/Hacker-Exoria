@@ -21,3 +21,5 @@ const String ForgotPhoneSubtitle =
     "Masukkan nomor telepon anda untuk menerima kode OTP";
 const String OTPTitle = "Kode OTP";
 const String OTPSubtitle = "Masukkan kode OTP yang telah dikirimkan ke";
+const String DashboardTitle = "Dashboard";
+const String DashboardSubtitle = "Welcome back,";

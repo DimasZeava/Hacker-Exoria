@@ -4,6 +4,8 @@ import "package:app/src/constants/text_strings.dart";
 import "package:app/src/features/authentication/screen/forgot_password/forgot_password_mail/forgot_password_mail.dart";
 import "package:app/src/features/authentication/screen/forgot_password/forgot_password_options/forgot_password_button_widget.dart";
 import "package:app/src/features/authentication/screen/forgot_password/forgot_password_phone/forgot_password_phone.dart";
+import "package:app/src/features/core/screens/dashboard_screen.dart";
+import "package:app/src/features/core/screens/navigation_bar.dart";
 import "package:flutter/material.dart";
 import "package:get/get.dart";
 
@@ -32,7 +34,7 @@ class LoginForm extends StatelessWidget {
                   borderRadius: BorderRadius.circular(10),
                   borderSide: BorderSide(color: PrimaryColor),
                 ),
-                prefixIcon: Icon(Icons.person_outline_outlined),
+                prefixIcon: Icon(Icons.person),
                 hintText: "Email",
                 hintStyle: Theme.of(context).textTheme.bodyText1!.copyWith(
                       fontWeight: FontWeight.w100,
@@ -113,7 +115,8 @@ class LoginForm extends StatelessWidget {
                             subtitle: SelectionForgotPhone,
                             onTap: () {
                               Navigator.pop(context);
-                              Get.to(() => const ForgotPasswordPhoneScreen());},
+                              Get.to(() => const ForgotPasswordPhoneScreen());
+                            },
                           ),
                         ],
                       ),
@@ -130,7 +133,9 @@ class LoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Get.to(() => const Navigation());
+                  },
                   style: ElevatedButton.styleFrom(
                     elevation: 0,
                     shape: RoundedRectangleBorder(

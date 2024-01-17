@@ -29,7 +29,7 @@ class RegisterForm extends StatelessWidget{
                         borderRadius: BorderRadius.circular(10),
                         borderSide: BorderSide(color: PrimaryColor),
                       ),
-                      prefixIcon: Icon(Icons.person_outline_outlined),
+                      prefixIcon: Icon(Icons.person),
                       hintText: "Username",
                       hintStyle: Theme.of(context).textTheme.bodyText1!.copyWith(
                         fontWeight: FontWeight.w100,
