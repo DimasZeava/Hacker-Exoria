@@ -48,7 +48,7 @@ class Dashboard extends StatelessWidget {
                       onPressed: () {
                         AuthenticationRepository.instance.logout();
                       },
-                      child: Text("Logout"),
+                      child: Text("Breakfast"),
                       style: OutlinedButton.styleFrom(
                         foregroundColor: PrimaryColor,
                         side: BorderSide(color: Colors.black, width: 1),
