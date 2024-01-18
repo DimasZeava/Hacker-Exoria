@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "984720387896",
+    "project_id": "mening-app-exoria",
+    "storage_bucket": "mening-app-exoria.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:984720387896:android:bd28d54145b28d201b5bcd",
+        "android_client_info": {
+          "package_name": "com.example.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAE49IWDF2XM_IfOwJKKHTF0g41AdIqDtM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

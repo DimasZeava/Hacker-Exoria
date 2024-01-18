@@ -3,6 +3,7 @@ import "package:app/src/constants/colors.dart";
 import "package:app/src/constants/images_string.dart";
 import "package:app/src/constants/sizes.dart";
 import "package:app/src/constants/text_strings.dart";
+import "package:app/src/repository/authentication_repository/authentication_repository.dart";
 import "package:flutter/material.dart";
 
 class Dashboard extends StatelessWidget {
@@ -44,8 +45,10 @@ class Dashboard extends StatelessWidget {
                 Row(
                   children: [
                     OutlinedButton(
-                      onPressed: () {},
-                      child: Text("Breakfast"),
+                      onPressed: () {
+                        AuthenticationRepository.instance.logout();
+                      },
+                      child: Text("Logout"),
                       style: OutlinedButton.styleFrom(
                         foregroundColor: PrimaryColor,
                         side: BorderSide(color: Colors.black, width: 1),
