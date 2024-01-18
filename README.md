@@ -8,7 +8,7 @@ Mening merupakan aplikasi yang diajukan oleh Tim Exoria pada Hackfest 2024 ini. 
 # Deskripsi singkat tentang Mening
 Mening digunakan untuk menjawab permasalahan SDGs nomor 2 dan 3. Hal ini karena Mening digunakan untuk melakukan planning makanan agar pengguna bisa menghitung berapa kandungan makanan. Selain itu juga Mening dapat digunakan sebagai scanner pada makanan untuk mengetahui nutrisi makanan dan kalorinya. Dengan adanya Mening, pengguna dapat mengatur pola makan dan diet yang bagus setiap harinya. Selain itu Mening dapat digunakan untuk mengatur biaya pengeluaran dengan makanan sehat dengan harga semurah mungkin.
 
-# Screenshot Product Yang Telah Jadi
+# Screenshot Screen Product Yang Telah Jadi
 ![Screenshot 2024-01-18 175605](https://github.com/DimasZeava/Hacker-Exoria/assets/102441152/3449acc6-5938-4ff4-afe5-a7a8c83ed683)
 ![Screenshot 2024-01-18 192723](https://github.com/DimasZeava/Hacker-Exoria/assets/102441152/c6d461b1-6ff4-4ca3-8b4d-536139695847)
 ![Screenshot 2024-01-18 192729](https://github.com/DimasZeava/Hacker-Exoria/assets/102441152/e885be2d-9213-4178-a749-ce4933c8388c)
